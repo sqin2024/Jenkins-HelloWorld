@@ -1,6 +1,7 @@
 package com.sqin.jenkins.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -9,11 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
  * @Description
  **/
 @RestController
-public class TestController {
+@RequestMapping("/love")
+public class LoveController {
 
-    @GetMapping("/test")
+    @GetMapping("/forever")
     public String test() {
-        return "test";
+        return "Happiness lasts forever.";
     }
 
 }
